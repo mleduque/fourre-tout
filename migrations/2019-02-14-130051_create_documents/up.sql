@@ -1,0 +1,9 @@
+
+CREATE TABLE documents (
+    id BIGSERIAL PRIMARY KEY,
+    version BIGINT UNIQUE NOT NULL,
+    old_version BIGINT,
+    body JSONB NOT NULL,
+    published TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT now(),
+    first_published TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT now()
+)
