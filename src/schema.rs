@@ -1,4 +1,3 @@
-
 table! {
     documents (id) {
         id -> Int8,
