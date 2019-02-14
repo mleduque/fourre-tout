@@ -1,0 +1,1 @@
+DELETE FROM models WHERE id = 1 and name = 'simple text'
